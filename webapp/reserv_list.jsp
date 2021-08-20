@@ -7,14 +7,14 @@
     	//로그인한 id로 예약된 글들을 검색하기 위해 id값을 세션 받아옴
     	//메인-예약정보로 바로 들어온 것이라 예약페이지에서 잡아둔 세션은 이어지지 않고,
     	//새로 세션을 잡아줘야 한다.
-	    String m_id = (String)session.getAttribute("id"); //예약자id(준규DB)
-		//유저의 id를 dto에 싣는다.	
-	    ReservDTO dto = new ReservDTO();
-	    dto.setM_id(m_id);
-	    //1개 이상 검색하는 readAll메서드에 dto를 입력값으로 전송
-	    ReservDAO dao = new ReservDAO();
-		ArrayList<ReservDTO> list = dao.readAll(dto);
-		//반환된 값은 list에, 동일한id값을 갖는 레코드들이 담겨있다.		
+	String m_id = (String)session.getAttribute("id"); //예약자id(준규DB)
+	//유저의 id를 dto에 싣는다.	
+	ReservDTO dto = new ReservDTO();
+	dto.setM_id(m_id);
+	//1개 이상 검색하는 readAll메서드에 dto를 입력값으로 전송
+	ReservDAO dao = new ReservDAO();
+	ArrayList<ReservDTO> list = dao.readAll(dto);
+	//반환된 값은 list에, 동일한id값을 갖는 레코드들이 담겨있다.		
     %>
 <!DOCTYPE html>
 <html>
