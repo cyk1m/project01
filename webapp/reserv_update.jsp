@@ -9,7 +9,7 @@
     	String reserv_num = request.getParameter("reserv_num");
     	int reserv_num2 = Integer.parseInt(reserv_num);
     	//변경한 예약정보 값
-		String room_sort = request.getParameter("room_sort");
+	String room_sort = request.getParameter("room_sort");
     	String check_in = request.getParameter("check_in");
     	String check_out = request.getParameter("check_out");
     	String reserv_count = request.getParameter("reserv_count");
