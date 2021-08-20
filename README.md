@@ -1,4 +1,4 @@
-# Jsp와 MySQL을 이용한 제주도 호텔 예약 웹사이트 구현
+# Jsp와 MySQL을 이용한 제주도 호텔 예약 웹사이트
 Web site for hotel reservation in Jeju Island<br>
 
 <h3>담당 업무</h3>
