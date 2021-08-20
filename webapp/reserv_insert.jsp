@@ -5,10 +5,10 @@
     <%  
     	String m_id = (String)session.getAttribute("id"); //예약자id(from 준규DB)
     	String name = (String)session.getAttribute("name"); //예약자명(from 준규DB)
-		String h_id = (String)session.getAttribute("h_id"); //호텔id(from 명준DB)
-		String h_name = (String)session.getAttribute("h_name"); //호텔명(from 명준DB)
-		//reserv_main의 form으로부터 받아온 값
-		String room_sort = request.getParameter("room_sort");
+	String h_id = (String)session.getAttribute("h_id"); //호텔id(from 명준DB)
+	String h_name = (String)session.getAttribute("h_name"); //호텔명(from 명준DB)
+	//reserv_main의 form으로부터 받아온 값
+	String room_sort = request.getParameter("room_sort");
     	String check_in = request.getParameter("check_in");
     	String check_out = request.getParameter("check_out");
     	String reserv_count = request.getParameter("reserv_count");
